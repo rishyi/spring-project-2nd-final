@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlitchBusters | Premium Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/glitchbusters-frontend/css/dashbaord.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Floating Background Elements -->
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        
+        <!-- Glassmorphism Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>GlitchBusters</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item active" onclick="location.href='dashboard.html'">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="nav-item" onclick="location.href='shops.html'">
+                    <i class="fas fa-store"></i>
+                    <span>Shops</span>
+                </div>
+                <div class="nav-item" onclick="location.href='customer.html'">
+                    <i class="fas fa-users"></i>
+                    <span>Customers</span>
+                </div>
+                <div class="nav-item" onclick="location.href='items.html'">
+                    <i class="fas fa-microchip" ></i>
+                    <span>Components</span>
+                </div>
+                <div class="nav-item" onclick="location.href='orders.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+                <div class="nav-item" onclick="location.href='orders.html'">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Orders</span>
+                </div>
+                <div class="nav-item" onclick="location.href='billing.html'">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Payments</span>
+                </div>
+                <div class="nav-item" onclick="location.href='settings.html'">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard Overview</h1>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                    <span>John Doe</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            
+            <!-- Stats Cards -->
+            <div class="stats-cards">
+                <div class="stat-card card-1">
+                    <div class="header">
+                        <h4>Total Revenue</h4>
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="content">
+                        <h3>$24,780</h3>
+                        <p><i class="fas fa-arrow-up"></i> +12% from last month</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card card-2">
+                    <div class="header">
+                        <h4>Total Orders</h4>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="content">
+                        <h3>1,248</h3>
+                        <p><i class="fas fa-arrow-up"></i> +8% from last month</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card card-3">
+                    <div class="header">
+                        <h4>Pending Orders</h4>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="content">
+                        <h3>56</h3>
+                        <p><i class="fas fa-arrow-down"></i> -3% from last month</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card card-4">
+                    <div class="header">
+                        <h4>New Customers</h4>
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="content">
+                        <h3>214</h3>
+                        <p><i class="fas fa-arrow-up"></i> +15% from last month</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Charts and Orders -->
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Sales Analytics</h3>
+                        <button class="btn">View Report <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="chart-container">
+                        <!-- Chart would go here (Chart.js or similar) -->
+                        <img src="https://via.placeholder.com/800x300/1e293b/6366f1?text=Interactive+Sales+Chart" alt="Sales Chart" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Top Products</h3>
+                    </div>
+                    <div class="top-products">
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="RTX 4090">
+                            <div class="product-info">
+                                <h4>RTX 4090</h4>
+                                <p><i class="fas fa-bolt"></i> High Performance GPU</p>
+                            </div>
+                            <div class="product-sales">32 sales</div>
+                        </div>
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1592155931584-901ac15763e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Ryzen 9">
+                            <div class="product-info">
+                                <h4>Ryzen 9 7950X</h4>
+                                <p><i class="fas fa-microchip"></i> 16-Core Processor</p>
+                            </div>
+                            <div class="product-sales">28 sales</div>
+                        </div>
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1587202372775-e229f1725e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="DDR5 RAM">
+                            <div class="product-info">
+                                <h4>DDR5 32GB Kit</h4>
+                                <p><i class="fas fa-memory"></i> 5600MHz</p>
+                            </div>
+                            <div class="product-sales">25 sales</div>
+                        </div>
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1592890288564-7665d9c4f7d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="NVMe SSD">
+                            <div class="product-info">
+                                <h4>NVMe SSD 1TB</h4>
+                                <p><i class="fas fa-hdd"></i> 7000MB/s Read</p>
+                            </div>
+                            <div class="product-sales">22 sales</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Orders -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Recent Orders</h3>
+                    <button class="btn">View All <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#GB78945</td>
+                                <td>Alex Johnson</td>
+                                <td>May 15, 2023</td>
+                                <td>$1,245</td>
+                                <td><span class="status completed"><i class="fas fa-check-circle"></i> Completed</span></td>
+                                <td><button class="action-btn"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>#GB78944</td>
+                                <td>Sarah Williams</td>
+                                <td>May 15, 2023</td>
+                                <td>$845</td>
+                                <td><span class="status completed"><i class="fas fa-check-circle"></i> Completed</span></td>
+                                <td><button class="action-btn"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>#GB78943</td>
+                                <td>Michael Brown</td>
+                                <td>May 14, 2023</td>
+                                <td>$2,150</td>
+                                <td><span class="status processing"><i class="fas fa-sync-alt"></i> Processing</span></td>
+                                <td><button class="action-btn"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>#GB78942</td>
+                                <td>Emily Davis</td>
+                                <td>May 14, 2023</td>
+                                <td>$560</td>
+                                <td><span class="status pending"><i class="fas fa-clock"></i> Pending</span></td>
+                                <td><button class="action-btn"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>#GB78941</td>
+                                <td>David Miller</td>
+                                <td>May 13, 2023</td>
+                                <td>$1,780</td>
+                                <td><span class="status completed"><i class="fas fa-check-circle"></i> Completed</span></td>
+                                <td><button class="action-btn"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        // Add animations and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tooltips for action buttons
+            const actionBtns = document.querySelectorAll('.action-btn');
+            actionBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    // In a real app, this would show a context menu
+                    alert('Action menu would appear here');
+                });
+            });
+            
+            // Simulate loading animation
+            setTimeout(() => {
+                document.querySelectorAll('.stat-card, .card').forEach(card => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                });
+            }, 100);
+            
+            // User profile dropdown (simplified)
+            const userProfile = document.querySelector('.user-profile');
+            userProfile.addEventListener('click', function() {
+                alert('User dropdown menu would appear here');
+            });
+        });
+    </script>
+</body>
+</html>
